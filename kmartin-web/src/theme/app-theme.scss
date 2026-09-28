@@ -1,0 +1,14 @@
+@use "config/default-theme" as default-theme;
+@use "config/theme-mode" as theme-mode;
+
+// Angular Material v22 theming resources:
+// https://v22.material.angular.dev/guide/system-variables
+// https://v22.material.angular.dev/guide/theming
+// https://v22.material.angular.dev/components/categories
+// https://material-foundation.github.io/material-theme-builder/
+// https://themes.angular-material.dev/
+
+html {
+  @include default-theme.apply-theme;
+  @include theme-mode.apply-theme-modes;
+}

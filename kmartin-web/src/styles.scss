@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+// ---------- Root layout ---------------------------
+
+html,
+body,
+app-root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// ---------- Global element defaults ---------------
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--mat-sys-body-medium-font), sans-serif;
+  background-color: var(--mat-sys-background);
+  color: var(--mat-sys-on-background);
+}
