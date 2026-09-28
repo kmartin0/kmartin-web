@@ -20,4 +20,21 @@ body {
   font-family: var(--mat-sys-body-medium-font), sans-serif;
   background-color: var(--mat-sys-background);
   color: var(--mat-sys-on-background);
+  overflow-y: scroll;
+}
+
+// ---------- Icon Utilities ------------------------
+
+mat-icon {
+  &.medium-icon {
+    $size: 42px;
+
+    width: $size;
+    height: $size;
+    font-size: $size;
+    line-height: 100%;
+    margin: 0 4px;
+    border-radius: 8px;
+    padding: 2px;
+  }
 }

@@ -1,0 +1,60 @@
+@use "@angular/material" as mat;
+@use "mixins/helpers";
+
+:host {
+
+}
+
+.home-page-content {
+  @include helpers.module-page;
+}
+
+mat-toolbar {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+
+  @include mat.toolbar-overrides((
+    container-background-color: var(--mat-sys-primary),
+    container-text-color: var(--mat-sys-on-primary)
+  ));
+
+  @include helpers.dark-mode {
+    @include mat.toolbar-overrides((
+      container-background-color: var(--mat-sys-surface-container),
+      container-text-color: var(--mat-sys-on-surface)
+    ));
+  }
+}
+
+.header {
+  text-align: center;
+}
+
+.face-icon {
+  $size: 56px;
+
+  width: $size;
+  height: $size;
+  font-size: $size;
+  font-variation-settings: 'FILL' 1;
+}
+
+.title {
+  font: var(--mat-sys-headline-small);
+  margin: 0 0 16px;
+}
+
+.subtitle {
+  font: var(--mat-sys-body-large);
+  margin: 0 0 16px;
+}
+
+.icons-container {
+  display: flex;
+  gap: 12px;
+
+  a {
+    color: inherit;
+  }
+}
