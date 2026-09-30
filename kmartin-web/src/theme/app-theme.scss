@@ -1,4 +1,5 @@
 @use "config/default-theme" as default-theme;
+@use "config/theme-colors" as theme-colors;
 @use "config/theme-mode" as theme-mode;
 
 // Angular Material v22 theming resources:
@@ -9,6 +10,7 @@
 // https://themes.angular-material.dev/
 
 html {
-  @include default-theme.apply-theme;
+  @include default-theme.apply-base-theme;
+  @include theme-colors.apply-theme-colors;
   @include theme-mode.apply-theme-modes;
 }

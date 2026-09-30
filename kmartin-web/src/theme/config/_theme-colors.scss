@@ -1,0 +1,35 @@
+@use "default-theme" as default-theme;
+@use "theme-cream-colors" as cream-colors;
+@use "theme-blue-colors" as blue-colors;
+@use "theme-green-colors" as green-colors;
+@use "theme-pink-colors" as pink-colors;
+
+@mixin apply-theme-colors {
+  .theme-color-cream {
+    @include default-theme.apply-color-theme(
+      cream-colors.$primary-palette,
+      cream-colors.$tertiary-palette
+    );
+  }
+
+  .theme-color-blue {
+    @include default-theme.apply-color-theme(
+      blue-colors.$primary-palette,
+      blue-colors.$tertiary-palette
+    );
+  }
+
+  .theme-color-green {
+    @include default-theme.apply-color-theme(
+      green-colors.$primary-palette,
+      green-colors.$tertiary-palette
+    );
+  }
+
+  .theme-color-pink {
+    @include default-theme.apply-color-theme(
+      pink-colors.$primary-palette,
+      pink-colors.$tertiary-palette
+    );
+  }
+}

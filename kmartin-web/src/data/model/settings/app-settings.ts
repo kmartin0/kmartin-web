@@ -1,11 +1,14 @@
 import {DEFAULT_THEME_MODE, isThemeMode, ThemeMode} from './theme-mode';
+import {DEFAULT_THEME_COLOR, isThemeColor, ThemeColor} from './theme-color';
 
 export interface AppSettings {
   themeMode: ThemeMode;
+  themeColor: ThemeColor
 }
 
 export const DEFAULT_APP_SETTINGS: AppSettings = {
-  themeMode: DEFAULT_THEME_MODE
+  themeMode: DEFAULT_THEME_MODE,
+  themeColor: DEFAULT_THEME_COLOR
 };
 
 /**
@@ -24,6 +27,12 @@ export function resolveAppSettings(value: unknown): AppSettings {
   const settings = value as Record<string, unknown>;
 
   return {
-    themeMode: isThemeMode(settings['themeMode']) ? settings['themeMode'] : DEFAULT_APP_SETTINGS.themeMode
+    themeMode: isThemeMode(settings['themeMode'])
+      ? settings['themeMode']
+      : DEFAULT_APP_SETTINGS.themeMode,
+
+    themeColor: isThemeColor(settings['themeColor'])
+      ? settings['themeColor']
+      : DEFAULT_APP_SETTINGS.themeColor
   };
 }

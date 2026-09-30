@@ -1,0 +1,20 @@
+<button
+  mat-icon-button
+  [matMenuTriggerFor]="themeColorMenu"
+  matTooltip="Select theme color">
+  <mat-icon>palette</mat-icon>
+</button>
+
+<mat-menu #themeColorMenu="matMenu">
+  <mat-radio-group
+    class="theme-color-rg"
+    [value]="themeColor()"
+    (change)="onThemeColorSelected($event)">
+
+    <mat-radio-button [value]="ThemeColor.CREAM">Cream</mat-radio-button>
+    <mat-radio-button [value]="ThemeColor.BLUE">Blue</mat-radio-button>
+    <mat-radio-button [value]="ThemeColor.GREEN">Green</mat-radio-button>
+    <mat-radio-button [value]="ThemeColor.PINK">Pink</mat-radio-button>
+
+  </mat-radio-group>
+</mat-menu>

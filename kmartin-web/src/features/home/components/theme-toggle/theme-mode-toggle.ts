@@ -7,12 +7,12 @@ import {AppStore} from '../../../../app/app-store';
 import {ThemeMode} from '../../../../data/model/settings/theme-mode';
 
 @Component({
-  selector: 'app-theme-toggle',
+  selector: 'app-theme-mode-toggle',
   imports: [LoseFocusAfterClickDirective, MatIconButton, MatIcon, MatTooltip],
-  templateUrl: 'theme-toggle.html',
-  styleUrl: 'theme-toggle.scss',
+  templateUrl: 'theme-mode-toggle.html',
+  styleUrl: 'theme-mode-toggle.scss',
 })
-export class ThemeToggle {
+export class ThemeModeToggle {
   private readonly appStore = inject(AppStore);
 
   protected readonly icon = computed(() =>

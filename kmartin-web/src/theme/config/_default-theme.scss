@@ -1,14 +1,20 @@
 @use "@angular/material" as mat;
-@use "config/typography" as custom-typography;
-@use "config/default-theme-colors" as default-theme-colors;
+@use "typography" as custom-typography;
 
-@mixin apply-theme {
+@mixin apply-base-theme {
+  @include mat.theme((
+    typography: custom-typography.$typography-config,
+    density: (
+      scale: 0
+    )
+  ));
+}
+
+@mixin apply-color-theme($primary-palette, $tertiary-palette) {
   @include mat.theme((
     color: (
-      primary: default-theme-colors.$primary-palette,
-      tertiary: default-theme-colors.$tertiary-palette
-    ),
-    typography: custom-typography.$typography-config,
-    density: (scale: 0),
+      primary: $primary-palette,
+      tertiary: $tertiary-palette
+    )
   ));
 }
