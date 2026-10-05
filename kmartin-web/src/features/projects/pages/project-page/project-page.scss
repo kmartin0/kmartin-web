@@ -1,0 +1,5 @@
+@use "mixins/helpers";
+
+.project-page-content {
+  @include helpers.module-page;
+}

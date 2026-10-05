@@ -1,0 +1,22 @@
+@let projectLoadState = uiState().project;
+
+<app-toolbar
+  title="Project"
+  [titleLink]="AppEndpoints.projects()"/>
+
+<div class="project-page-content">
+  @switch (projectLoadState.status) {
+    @case ('idle') {
+
+    }
+    @case ('loading') {
+
+    }
+    @case ('loaded') {
+      <app-project [project]="projectLoadState.data"/>
+    }
+    @case ('error') {
+      <app-page-error message="The project could not be found"/>
+    }
+  }
+</div>

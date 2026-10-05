@@ -1,0 +1,87 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font: var(--mat-sys-headline-medium);
+}
+
+.technologies {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  mat-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+  }
+}
+
+/* Description */
+.description {
+  margin: 0;
+  font: var(--mat-sys-body-large);
+}
+
+/* Shared section */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-title {
+  margin: 0;
+  font: var(--mat-sys-headline-small);
+}
+
+/* References */
+.project-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  mat-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+  }
+}
+
+/* Features */
+.feature-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+/* Technical overview */
+.technical-details-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+/* Screenshots */
+app-project-screenshot-carousel {
+  width: 100%;
+}

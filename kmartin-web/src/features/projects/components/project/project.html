@@ -1,0 +1,82 @@
+@let projectData = project();
+
+<div class="project">
+  <div class="header">
+    <!-- Title -->
+    <h1 class="title">{{ projectData.title }}</h1>
+
+    <!-- Technology icons -->
+    @if (projectData.technologies.length > 0) {
+      <div class="technologies">
+        @for (technology of projectData.technologies; track technology.iconId) {
+          <mat-icon
+            [svgIcon]="technology.iconId"
+            [matTooltip]="technology.name"/>
+        }
+      </div>
+    }
+  </div>
+
+  <mat-divider/>
+
+  <!-- Description -->
+  <p class="description">
+    {{ projectData.description }}
+  </p>
+
+  <!-- References -->
+  @if (projectData.projectLinks.length > 0) {
+    <section class="section">
+      <h2 class="section-title">References</h2>
+
+      <div class="project-links">
+        @for (projectLink of projectData.projectLinks; track projectLink.url) {
+          <a
+            class="plain"
+            [href]="projectLink.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            [matTooltip]="projectLink.name">
+            <mat-icon [svgIcon]="projectLink.iconId"/>
+          </a>
+        }
+      </div>
+    </section>
+  }
+
+  <!-- Features -->
+  @if (projectData.features.length > 0) {
+    <section class="section">
+      <h2 class="section-title">Features</h2>
+
+      <ul class="feature-list">
+        @for (feature of projectData.features; track feature) {
+          <li>{{ feature }}</li>
+        }
+      </ul>
+    </section>
+  }
+
+  <!-- Technical overview -->
+  @if (projectData.technicalDetails.length > 0) {
+    <section class="section">
+      <h2 class="section-title">Technical Overview</h2>
+
+      <ul class="technical-details-list">
+        @for (technicalDetail of projectData.technicalDetails; track technicalDetail) {
+          <li>{{ technicalDetail }}</li>
+        }
+      </ul>
+    </section>
+  }
+
+  <!-- Screenshots -->
+  @if (projectData.screenshots.length > 0) {
+    <section class="section">
+      <h2 class="section-title">Screenshots</h2>
+
+      <app-project-screenshot-carousel
+        [screenshots]="projectData.screenshots"/>
+    </section>
+  }
+</div>

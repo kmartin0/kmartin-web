@@ -1,0 +1,18 @@
+@let screenshotData = screenshots();
+
+<swiper-container
+  navigation="true"
+  pagination-clickable="true"
+  space-between="8">
+
+  @for (screenshot of screenshotData; track screenshot.url) {
+    <swiper-slide>
+      <img
+        class="screenshot"
+        [ngSrc]="screenshot.url"
+        [alt]="screenshot.name"
+        [width]="screenshot.width"
+        [height]="screenshot.height">
+    </swiper-slide>
+  }
+</swiper-container>

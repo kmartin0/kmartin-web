@@ -4,6 +4,8 @@ import {MatCard} from '@angular/material/card';
 import {NgOptimizedImage} from '@angular/common';
 import {MatIcon} from '@angular/material/icon';
 import {MatTooltip} from '@angular/material/tooltip';
+import {AppEndpoints} from '../../../../app/app-endpoints';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-project-preview-card',
@@ -13,9 +15,12 @@ import {MatTooltip} from '@angular/material/tooltip';
     MatCard,
     NgOptimizedImage,
     MatIcon,
-    MatTooltip
+    MatTooltip,
+    RouterLink
   ]
 })
 export class ProjectPreviewCard {
   readonly project = input.required<Project>();
+
+  protected readonly AppEndpoints = AppEndpoints;
 }

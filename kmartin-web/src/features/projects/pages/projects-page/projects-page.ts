@@ -2,7 +2,6 @@ import {Component, inject} from '@angular/core';
 import {ProjectRepository} from '../../../../data/repository/project-repository';
 import {AppToolbar} from '../../../../shared/components/app-toolbar/app-toolbar';
 import {AppEndpoints} from '../../../../app/app-endpoints';
-import {ProjectPreviewCard} from '../../components/project-preview-card/project-preview-card';
 import {ProjectGroup} from '../../components/project-group/project-group';
 import {MatDivider} from '@angular/material/list';
 
@@ -11,7 +10,6 @@ import {MatDivider} from '@angular/material/list';
   templateUrl: './projects-page.html',
   imports: [
     AppToolbar,
-    ProjectPreviewCard,
     ProjectGroup,
     MatDivider
   ],

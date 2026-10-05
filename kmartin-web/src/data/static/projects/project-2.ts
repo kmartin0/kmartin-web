@@ -20,7 +20,20 @@ export const PROJECT_2_WEB_PROJECT: Project = {
     'Excepteur sint occaecat cupidatat non proident'
   ],
 
-  screenshots: [],
+  screenshots: [
+    {
+      name: 'Parrot',
+      url: 'https://img.magnific.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80',
+      width: 494,
+      height: 740
+    },
+    {
+      name: 'Hummingbird',
+      url: 'https://img.magnific.com/free-photo/photorealistic-hummingbird-outdoors-nature_23-2151474112.jpg?semt=ais_hybrid&w=740&q=80',
+      width: 740,
+      height: 415
+    }
+  ],
 
   previewImage: {
     name: 'Parrot',
@@ -71,7 +84,20 @@ export const PROJECT_2_API_PROJECT: Project = {
     'Excepteur sint occaecat cupidatat non proident'
   ],
 
-  screenshots: [],
+  screenshots: [
+    {
+      name: 'Parrot',
+      url: 'https://img.magnific.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80',
+      width: 494,
+      height: 740
+    },
+    {
+      name: 'Hummingbird',
+      url: 'https://img.magnific.com/free-photo/photorealistic-hummingbird-outdoors-nature_23-2151474112.jpg?semt=ais_hybrid&w=740&q=80',
+      width: 740,
+      height: 415
+    }
+  ],
 
   previewImage: {
     name: 'Hummingbird',
@@ -122,7 +148,20 @@ export const PROJECT_2_ANDROID_PROJECT: Project = {
     'Excepteur sint occaecat cupidatat non proident'
   ],
 
-  screenshots: [],
+  screenshots: [
+    {
+      name: 'Parrot',
+      url: 'https://img.magnific.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80',
+      width: 494,
+      height: 740
+    },
+    {
+      name: 'Hummingbird',
+      url: 'https://img.magnific.com/free-photo/photorealistic-hummingbird-outdoors-nature_23-2151474112.jpg?semt=ais_hybrid&w=740&q=80',
+      width: 740,
+      height: 415
+    }
+  ],
 
   previewImage: {
     name: 'Parrot',
