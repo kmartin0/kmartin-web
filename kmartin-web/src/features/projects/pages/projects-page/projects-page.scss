@@ -1,0 +1,12 @@
+@use "mixins/helpers";
+
+.projects-page-content {
+  @include helpers.module-page;
+}
+
+.project-groups {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

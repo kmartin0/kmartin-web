@@ -1,0 +1,11 @@
+@let projectGroupData = projectGroup();
+
+<section class="project-group">
+  <h2 class="title">{{ projectGroupData.title }}</h2>
+
+  <div class="projects">
+    @for (project of projectGroupData.projects; track project.id) {
+      <app-project-preview-card [project]="project"/>
+    }
+  </div>
+</section>

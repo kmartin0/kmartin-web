@@ -1,10 +1,13 @@
-<app-home-toolbar/>
+<app-toolbar title="Home" [titleLink]="AppEndpoints.home()"/>
 
 <div class="home-page-content">
   <div class="header">
     <mat-icon class="face-icon">face</mat-icon>
-    <p class="title">Hi, I'm Kevin Martin</p>
-    <p class="subtitle">Welcome to my website</p>
+
+    <div class="intro">
+      <p class="title">Hi, I'm Kevin Martin</p>
+      <p class="subtitle">Welcome to my website</p>
+    </div>
   </div>
 
   <div class="icons-container">
@@ -14,4 +17,14 @@
       </a>
     }
   </div>
+
+  <a
+    class="projects-button"
+    matButton="outlined"
+    [routerLink]="AppEndpoints.projects()">
+    <mat-icon></mat-icon>
+    Open projects
+    <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+  </a>
+
 </div>

@@ -1,0 +1,13 @@
+<mat-toolbar>
+  @if (titleLink(); as link) {
+    <a class="plain" [routerLink]="link">{{ title() }}</a>
+  } @else {
+    <span>{{ title() }}</span>
+  }
+
+  <span class="spacer"></span>
+
+  <app-theme-color-picker/>
+  <app-theme-mode-toggle/>
+  <ng-content/>
+</mat-toolbar>

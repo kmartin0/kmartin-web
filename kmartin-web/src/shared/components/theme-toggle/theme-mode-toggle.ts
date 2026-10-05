@@ -2,9 +2,9 @@ import {Component, computed, inject} from '@angular/core';
 import {MatIconButton} from '@angular/material/button';
 import {MatIcon} from '@angular/material/icon';
 import {MatTooltip} from '@angular/material/tooltip';
-import {LoseFocusAfterClickDirective} from '../../../../shared/directives/lose-focus-after-click';
-import {AppStore} from '../../../../app/app-store';
-import {ThemeMode} from '../../../../data/model/settings/theme-mode';
+import {LoseFocusAfterClickDirective} from '../../directives/lose-focus-after-click';
+import {AppStore} from '../../../app/app-store';
+import {ThemeMode} from '../../../data/model/settings/theme-mode';
 
 @Component({
   selector: 'app-theme-mode-toggle',

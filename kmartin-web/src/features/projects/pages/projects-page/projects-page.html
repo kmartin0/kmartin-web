@@ -1,0 +1,13 @@
+<app-toolbar title="Projects" [titleLink]="AppEndpoints.home()"/>
+
+<div class="projects-page-content">
+  <div class="project-groups">
+    @for (projectGroup of projectGroups; track projectGroup.id; let last = $last) {
+      <app-project-group [projectGroup]="projectGroup"/>
+
+      @if (!last) {
+        <mat-divider/>
+      }
+    }
+  </div>
+</div>

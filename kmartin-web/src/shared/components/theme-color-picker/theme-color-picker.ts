@@ -3,8 +3,8 @@ import {MatIconButton} from '@angular/material/button';
 import {MatMenu, MatMenuTrigger} from '@angular/material/menu';
 import {MatIcon} from '@angular/material/icon';
 import {MatRadioButton, MatRadioChange, MatRadioGroup} from '@angular/material/radio';
-import {AppStore} from '../../../../app/app-store';
-import {ThemeColor} from '../../../../data/model/settings/theme-color';
+import {AppStore} from '../../../app/app-store';
+import {ThemeColor} from '../../../data/model/settings/theme-color';
 import {MatTooltip} from '@angular/material/tooltip';
 
 @Component({

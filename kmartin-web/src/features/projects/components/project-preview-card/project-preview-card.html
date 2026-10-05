@@ -1,0 +1,24 @@
+@let projectData = project();
+
+<mat-card class="project-card">
+  <h3 class="title">{{ projectData.title }}</h3>
+
+  @if (projectData.previewImage; as previewImage) {
+    <img
+      class="preview-image"
+      [ngSrc]="previewImage.url"
+      [alt]="previewImage.name"
+      [width]="previewImage.width"
+      [height]="previewImage.height">
+  }
+
+  @if (projectData.technologies.length > 0) {
+    <div class="technologies">
+      @for (technology of projectData.technologies; track technology.iconId) {
+        <mat-icon
+          [svgIcon]="technology.iconId"
+          [matTooltip]="technology.name"/>
+      }
+    </div>
+  }
+</mat-card>

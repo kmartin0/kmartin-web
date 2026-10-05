@@ -1,0 +1,37 @@
+@use "mixins/devices";
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.project-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.title {
+  font: var(--mat-sys-headline-medium);
+  margin: 0;
+
+  @include devices.device(phone, phablet) {
+    text-align: center;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  @include devices.device(phone, phablet) {
+    justify-content: center;
+  }
+}
+
+app-project-preview-card {
+  width: 300px;
+  height: 400px;
+}

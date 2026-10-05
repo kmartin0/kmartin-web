@@ -34,10 +34,9 @@
   function loadSettings() {
     try {
       const storedSettings = localStorage.getItem(STORAGE_KEY);
+      const settings = storedSettings === null ? null : JSON.parse(storedSettings);
 
-      return storedSettings === null
-        ? null
-        : JSON.parse(storedSettings);
+      return settings !== null && typeof settings === 'object' && !Array.isArray(settings) ? settings : null;
     } catch {
       return null;
     }
