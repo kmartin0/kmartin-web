@@ -1,6 +1,6 @@
 import {ProjectImage} from './project-image';
 import {ProjectLink} from './project-link';
-import {Technology} from './technology';
+import {AppSvgIcon} from '../../static/icons/app-svg-icons';
 
 export interface Project {
   readonly id: string;
@@ -11,5 +11,5 @@ export interface Project {
   readonly screenshots: readonly ProjectImage[];
   readonly previewImage: ProjectImage | null;
   readonly projectLinks: readonly ProjectLink[];
-  readonly technologies: readonly Technology[];
+  readonly technologies: readonly AppSvgIcon[];
 }

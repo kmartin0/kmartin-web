@@ -1,7 +1,6 @@
-import {AppIcon} from '../../static/icons/app-icons';
+import {AppSvgIcon} from '../../static/icons/app-svg-icons';
 
 export interface ProjectLink {
-  readonly name: string;
   readonly url: string;
-  readonly icon: AppIcon;
+  readonly icon: AppSvgIcon;
 }

@@ -1,7 +1,6 @@
 import {Component, input} from '@angular/core';
 import {Project} from '../../../../data/model/project/project';
 import {MatCard} from '@angular/material/card';
-import {NgOptimizedImage} from '@angular/common';
 import {MatIcon} from '@angular/material/icon';
 import {MatTooltip} from '@angular/material/tooltip';
 import {AppEndpoints} from '../../../../app/app-endpoints';

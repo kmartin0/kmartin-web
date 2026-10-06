@@ -2,7 +2,7 @@ import {Component, inject} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
-import {APP_ICONS} from '../data/static/icons/app-icons';
+import {APP_SVG_ICONS} from '../data/static/icons/app-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +22,7 @@ export class App {
    * Registers the custom application icons.
    */
   private registerIcons(): void {
-    Object.values(APP_ICONS).forEach(icon => {
+    Object.values(APP_SVG_ICONS).forEach(icon => {
       this.matIconRegistry.addSvgIcon(
         icon.id,
         this.domSanitizer.bypassSecurityTrustResourceUrl(icon.path)
