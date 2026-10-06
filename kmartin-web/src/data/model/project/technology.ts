@@ -1,5 +1,6 @@
+import {AppIcon} from '../../static/icons/app-icons';
+
 export interface Technology {
   readonly name: string;
-  readonly iconId: string;
-  readonly iconPath: string;
+  readonly icon: AppIcon;
 }

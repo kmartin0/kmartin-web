@@ -13,7 +13,6 @@ import {RouterLink} from '@angular/router';
   styleUrl: './project-preview-card.scss',
   imports: [
     MatCard,
-    NgOptimizedImage,
     MatIcon,
     MatTooltip,
     RouterLink

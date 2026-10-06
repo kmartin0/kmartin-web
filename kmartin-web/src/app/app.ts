@@ -2,11 +2,7 @@ import {Component, inject} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
-
-const ICONS_METADATA = [
-  {name: 'linkedin', location: 'linkedin-icon.svg'},
-  {name: 'github', location: 'github-icon.svg'}
-];
+import {APP_ICONS} from '../data/static/icons/app-icons';
 
 @Component({
   selector: 'app-root',
@@ -26,9 +22,10 @@ export class App {
    * Registers the custom application icons.
    */
   private registerIcons(): void {
-    ICONS_METADATA.forEach(iconMetaData => {
+    Object.values(APP_ICONS).forEach(icon => {
       this.matIconRegistry.addSvgIcon(
-        iconMetaData.name, this.domSanitizer.bypassSecurityTrustResourceUrl(iconMetaData.location)
+        icon.id,
+        this.domSanitizer.bypassSecurityTrustResourceUrl(icon.path)
       );
     });
   }

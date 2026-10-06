@@ -19,9 +19,9 @@
     <!-- Project technology icons -->
     @if (projectData.technologies.length > 0) {
       <div class="technologies">
-        @for (technology of projectData.technologies; track technology.iconId) {
+        @for (technology of projectData.technologies; track technology.icon.id) {
           <mat-icon
-            [svgIcon]="technology.iconId"
+            [svgIcon]="technology.icon.id"
             [matTooltip]="technology.name"/>
         }
       </div>

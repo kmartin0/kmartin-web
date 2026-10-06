@@ -9,9 +9,6 @@ register();
   selector: 'app-project-screenshot-carousel',
   templateUrl: './project-screenshot-carousel.html',
   styleUrl: './project-screenshot-carousel.scss',
-  imports: [
-    NgOptimizedImage
-  ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ]

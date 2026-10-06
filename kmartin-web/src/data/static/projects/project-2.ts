@@ -1,5 +1,6 @@
 import {Project} from '../../model/project/project';
 import {ProjectGroup} from '../../model/project/project-group';
+import {APP_ICONS} from '../icons/app-icons';
 
 export const PROJECT_2_WEB_PROJECT: Project = {
   id: 'project-2-web',
@@ -46,21 +47,18 @@ export const PROJECT_2_WEB_PROJECT: Project = {
     {
       name: 'GitHub',
       url: 'https://github.com/kmartin0',
-      iconId: 'github',
-      iconPath: 'github-icon.svg'
+      icon: APP_ICONS.github
     }
   ],
 
   technologies: [
     {
       name: 'GitHub',
-      iconId: 'github',
-      iconPath: 'github-icon.svg'
+      icon: APP_ICONS.github
     },
     {
       name: 'LinkedIn',
-      iconId: 'linkedin',
-      iconPath: 'linkedin-icon.svg'
+      icon: APP_ICONS.linkedin
     }
   ]
 };
@@ -110,21 +108,18 @@ export const PROJECT_2_API_PROJECT: Project = {
     {
       name: 'GitHub',
       url: 'https://github.com/kmartin0',
-      iconId: 'github',
-      iconPath: 'github-icon.svg'
+      icon: APP_ICONS.github
     }
   ],
 
   technologies: [
     {
       name: 'GitHub',
-      iconId: 'github',
-      iconPath: 'github-icon.svg'
+      icon: APP_ICONS.github
     },
     {
       name: 'LinkedIn',
-      iconId: 'linkedin',
-      iconPath: 'linkedin-icon.svg'
+      icon: APP_ICONS.linkedin
     }
   ]
 };
@@ -174,21 +169,18 @@ export const PROJECT_2_ANDROID_PROJECT: Project = {
     {
       name: 'GitHub',
       url: 'https://github.com/kmartin0',
-      iconId: 'github',
-      iconPath: 'github-icon.svg'
+      icon: APP_ICONS.github
     }
   ],
 
   technologies: [
     {
       name: 'GitHub',
-      iconId: 'github',
-      iconPath: 'github-icon.svg'
+      icon: APP_ICONS.github
     },
     {
       name: 'LinkedIn',
-      iconId: 'linkedin',
-      iconPath: 'linkedin-icon.svg'
+      icon: APP_ICONS.linkedin
     }
   ]
 };
