@@ -5,10 +5,11 @@ import {MatButton} from '@angular/material/button';
 import {AppEndpoints} from '../../../../app/app-endpoints';
 import {RouterLink} from '@angular/router';
 import {AppToolbar} from '../../../../shared/components/app-toolbar/app-toolbar';
+import {APP_ICONS} from '../../../../data/static/icons/app-icons';
 
 const SOCIAL_LINKS = [
-  {name: 'Github', icon: 'github', url: 'https://github.com/kmartin0'},
-  {name: 'LinkedIn', icon: 'linkedin', url: 'https://linkedin.com/in/pk-martin'},
+  {icon: APP_ICONS.github, url: 'https://github.com/kmartin0', name: 'Github'},
+  {icon: APP_ICONS.linkedin, url: 'https://linkedin.com/in/pk-martin', name: 'LinkedIn'},
 ];
 
 @Component({

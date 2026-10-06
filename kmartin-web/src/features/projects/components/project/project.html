@@ -1,6 +1,7 @@
 @let projectData = project();
 
 <div class="project">
+  <!-- Header -->
   <div class="header">
     <!-- Title -->
     <h1 class="title">{{ projectData.title }}</h1>
@@ -10,6 +11,7 @@
       <div class="technologies">
         @for (technology of projectData.technologies; track technology.icon.id) {
           <mat-icon
+            class="icon-medium"
             [svgIcon]="technology.icon.id"
             [matTooltip]="technology.name"/>
         }
@@ -37,7 +39,9 @@
             target="_blank"
             rel="noopener noreferrer"
             [matTooltip]="projectLink.name">
-            <mat-icon [svgIcon]="projectLink.icon.id"/>
+            <mat-icon
+              class="icon-medium"
+              [svgIcon]="projectLink.icon.id"/>
           </a>
         }
       </div>

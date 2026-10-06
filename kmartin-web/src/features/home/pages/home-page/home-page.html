@@ -2,7 +2,7 @@
 
 <div class="home-page-content">
   <div class="header">
-    <mat-icon class="face-icon">face</mat-icon>
+    <mat-icon class="icon-extra-large icon-filled">face</mat-icon>
 
     <div class="intro">
       <p class="title">Hi, I'm Kevin Martin</p>
@@ -11,11 +11,20 @@
   </div>
 
   <div class="icons-container">
-    @for (link of SOCIAL_LINKS; track link.icon) {
-      <a [href]="link.url" target="_blank" rel="noopener" [attr.aria-label]="link.name">
-        <mat-icon class="medium-icon" [svgIcon]="link.icon" [matTooltip]="link.name"></mat-icon>
-      </a>
-    }
+    <div class="icons-container">
+      @for (link of SOCIAL_LINKS; track link.icon.id) {
+        <a
+          [href]="link.url"
+          target="_blank"
+          rel="noopener"
+          [attr.aria-label]="link.name">
+          <mat-icon
+            class="icon-large social-icon"
+            [svgIcon]="link.icon.id"
+            [matTooltip]="link.name"/>
+        </a>
+      }
+    </div>
   </div>
 
   <a

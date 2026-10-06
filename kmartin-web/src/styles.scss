@@ -25,17 +25,25 @@ body {
 
 // ---------- Icon Utilities ------------------------
 
-mat-icon {
-  &.medium-icon {
-    $size: 42px;
+$icon-sizes: (
+  small: 24px, // Default mat-icon size
+  medium: 32px,
+  large: 42px,
+  extra-large: 64px
+);
 
-    width: $size;
-    height: $size;
-    font-size: $size;
-    line-height: 100%;
-    margin: 0 4px;
-    border-radius: 8px;
-    padding: 2px;
+mat-icon {
+  @each $name, $size in $icon-sizes {
+    &.icon-#{$name} {
+      width: $size;
+      height: $size;
+      font-size: $size;
+      line-height: $size;
+    }
+  }
+
+  &.icon-filled {
+    font-variation-settings: 'FILL' 1;
   }
 }
 

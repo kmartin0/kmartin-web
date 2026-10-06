@@ -1,6 +1,8 @@
 @let projectData = project();
 
-<a class="plain" [routerLink]="AppEndpoints.project(projectData.id)">
+<a
+  class="plain"
+  [routerLink]="AppEndpoints.project(projectData.id)">
 
   <mat-card class="project-card">
     <!-- Project title -->
@@ -21,6 +23,7 @@
       <div class="technologies">
         @for (technology of projectData.technologies; track technology.icon.id) {
           <mat-icon
+            class="icon-medium"
             [svgIcon]="technology.icon.id"
             [matTooltip]="technology.name"/>
         }

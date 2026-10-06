@@ -24,17 +24,13 @@
   font: var(--mat-sys-headline-medium);
 }
 
-.technologies {
+/* Icon groups */
+.technologies,
+.project-links {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-
-  mat-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 32px;
-  }
 }
 
 /* Description */
@@ -55,33 +51,9 @@
   font: var(--mat-sys-headline-small);
 }
 
-/* References */
-.project-links {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-
-  mat-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 32px;
-  }
-}
-
-/* Features */
-.feature-list {
-  margin: 0;
-  padding-left: 24px;
-}
-
-/* Technical overview */
+/* Lists */
+.feature-list,
 .technical-details-list {
   margin: 0;
   padding-left: 24px;
-}
-
-/* Screenshots */
-app-project-screenshot-carousel {
-  width: 100%;
 }
