@@ -8,7 +8,7 @@ export enum ThemeColor {
   PINK = 'pink'
 }
 
-export const DEFAULT_THEME_COLOR: ThemeColor = ThemeColor.BLUE;
+export const DEFAULT_THEME_COLOR: ThemeColor = ThemeColor.CREAM;
 
 export const THEME_COLOR_BODY_CLASSES: Readonly<Record<ThemeColor, string>> =
   Object.freeze({
