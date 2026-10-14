@@ -31,7 +31,7 @@ swiper-slide {
   justify-content: center;
 
   box-sizing: border-box;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
 }
 
 .screenshot {
@@ -43,4 +43,6 @@ swiper-slide {
   max-height: 100%;
 
   object-fit: contain;
+
+  border: 1px solid var(--mat-sys-outline-variant);
 }

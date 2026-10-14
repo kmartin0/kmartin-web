@@ -45,6 +45,26 @@ $card-shape: 16px;
   border-radius: $card-shape;
 }
 
+.preview-placeholder {
+  grid-row: 2;
+
+  align-self: center;
+  justify-self: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-placeholder-icon {
+  width: 172px;
+  height: 172px;
+  font-size: 172px;
+  line-height: 172px;
+
+  color: var(--mat-sys-outline);
+}
+
 .technologies {
   grid-row: 3;
 

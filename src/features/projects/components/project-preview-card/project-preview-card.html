@@ -16,6 +16,10 @@
         [alt]="previewImage.name"
         [width]="previewImage.width"
         [height]="previewImage.height">
+    } @else {
+      <div class="preview-placeholder">
+        <mat-icon class="preview-placeholder-icon">terminal</mat-icon>
+      </div>
     }
 
     <!-- Project technology icons -->

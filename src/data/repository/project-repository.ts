@@ -1,12 +1,24 @@
 import {Injectable} from '@angular/core';
 import {Project} from '../model/project/project';
 import {ProjectGroup} from '../model/project/project-group';
-import {PROJECT_1_PROJECT_GROUP} from '../static/projects/project-1';
-import {PROJECT_2_PROJECT_GROUP} from '../static/projects/project-2';
+import {SCENEFORM_SHOWCASE_PROJECT_GROUP} from '../static/projects/project-sceneform-showcase';
+import {BACKFLOW_CALCULATOR_PROJECT_GROUP} from '../static/projects/project-backflow-calculator';
+import {CIVILIAN_CPR_PROJECT_GROUP} from '../static/projects/project-civilian-cpr';
+import {KNITSTER_PROJECT_GROUP} from '../static/projects/project-knitster';
+import {MUSIC_PLAYER_PROJECT_GROUP} from '../static/projects/project-music-player';
+import {SPRING_BOOT_API_BOILERPLATE_PROJECT_GROUP} from '../static/projects/project-spring-boot-api-boilerplate';
+import {PARCEL_ORGANIZER_PROJECT_GROUP} from '../static/projects/project-parcel-organizer';
+import {DARTS_MATCHER_PROJECT_GROUP} from '../static/projects/project-darts-matcher';
 
 const PROJECT_GROUPS = [
-  PROJECT_1_PROJECT_GROUP,
-  PROJECT_2_PROJECT_GROUP
+  DARTS_MATCHER_PROJECT_GROUP,
+  KNITSTER_PROJECT_GROUP,
+  CIVILIAN_CPR_PROJECT_GROUP,
+  SCENEFORM_SHOWCASE_PROJECT_GROUP,
+  PARCEL_ORGANIZER_PROJECT_GROUP,
+  MUSIC_PLAYER_PROJECT_GROUP,
+  BACKFLOW_CALCULATOR_PROJECT_GROUP,
+  SPRING_BOOT_API_BOILERPLATE_PROJECT_GROUP
 ];
 
 /**
