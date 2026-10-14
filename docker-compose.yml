@@ -1,0 +1,11 @@
+services:
+  kmartin-web-development:
+    image: kmartin-web-development
+    container_name: kmartin-web-development
+    build:
+      context: .
+      args:
+        PROFILE: dev
+    restart: unless-stopped
+    ports:
+      - "4200:80"
