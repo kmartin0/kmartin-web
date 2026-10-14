@@ -18,7 +18,7 @@
         [height]="previewImage.height">
     } @else {
       <div class="preview-placeholder">
-        <mat-icon class="preview-placeholder-icon">terminal</mat-icon>
+        <mat-icon class="preview-placeholder-icon icon-highlighted">terminal</mat-icon>
       </div>
     }
 
@@ -27,7 +27,7 @@
       <div class="technologies">
         @for (technology of projectData.technologies; track technology.id) {
           <mat-icon
-            class="icon-medium"
+            class="icon-medium icon-highlighted"
             [svgIcon]="technology.id"
             [matTooltip]="technology.name"/>
         }

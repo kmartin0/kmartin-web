@@ -11,7 +11,7 @@
       <div class="technologies">
         @for (technology of projectData.technologies; track technology.id) {
           <mat-icon
-            class="icon-medium"
+            class="icon-medium icon-highlighted"
             [svgIcon]="technology.id"
             [matTooltip]="technology.name"/>
         }

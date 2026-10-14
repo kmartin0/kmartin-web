@@ -45,6 +45,10 @@ mat-icon {
   &.icon-filled {
     font-variation-settings: 'FILL' 1;
   }
+
+  &.icon-highlighted {
+    color: var(--mat-sys-tertiary);
+  }
 }
 
 // ---------- Link utilities ------------------------
