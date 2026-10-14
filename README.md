@@ -1,59 +1,40 @@
-# KmartinWeb
+# Portfolio Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.0.
+Personal portfolio website for showing software projects, technologies and project details.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Landing page with links to GitHub and LinkedIn.
+- Browse projects grouped by platform or product.
+- Project preview cards with screenshots and technology icons.
+- Detailed project pages with descriptions, features and technical information.
+- Links to project repositories and live applications.
+- Screenshot carousel for project images.
+- Light and dark mode.
+- Multiple selectable color themes.
+- Persist theme preferences locally.
+- Responsive layouts for mobile and desktop.
 
-```bash
-ng serve
-```
+## Technical Overview
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular.
+- TypeScript.
+- Angular Material and CDK.
+- Angular Signals for application state.
+- Angular Router for project and page navigation.
+- Custom Material theme system with light and dark modes and multiple color themes.
+- Local storage for persisted application settings.
+- Swiper for project screenshot carousels.
+- SVG technology and reference icons.
+- Docker multi-stage build served using nginx.
+- Responsive SCSS styling.
 
-## Code scaffolding
+## Screenshots
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+<img src="https://github.com/kmartin0/assets/blob/master/kmartin-web/kmartin-web_home.png?raw=true" alt="Home screenshot" width="300" />
 
-```bash
-ng generate component component-name
-```
+<img src="https://github.com/kmartin0/assets/blob/master/kmartin-web/kmartin-web_home-dark.png?raw=true" alt="Home dark mode screenshot" width="300" />
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+<img src="https://github.com/kmartin0/assets/blob/master/kmartin-web/kmartin-web_projects.png?raw=true" alt="Projects screenshot" width="300" />
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<img src="https://github.com/kmartin0/assets/blob/master/kmartin-web/kmartin-web_project.png?raw=true" alt="Project screenshot" width="300" />
