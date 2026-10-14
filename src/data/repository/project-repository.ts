@@ -9,12 +9,14 @@ import {MUSIC_PLAYER_PROJECT_GROUP} from '../static/projects/project-music-playe
 import {SPRING_BOOT_API_BOILERPLATE_PROJECT_GROUP} from '../static/projects/project-spring-boot-api-boilerplate';
 import {PARCEL_ORGANIZER_PROJECT_GROUP} from '../static/projects/project-parcel-organizer';
 import {DARTS_MATCHER_PROJECT_GROUP} from '../static/projects/project-darts-matcher';
+import {KMARTIN_WEB_PROJECT_GROUP} from '../static/projects/project-kmartin-web';
 
 const PROJECT_GROUPS = [
   DARTS_MATCHER_PROJECT_GROUP,
   KNITSTER_PROJECT_GROUP,
   CIVILIAN_CPR_PROJECT_GROUP,
   SCENEFORM_SHOWCASE_PROJECT_GROUP,
+  KMARTIN_WEB_PROJECT_GROUP,
   PARCEL_ORGANIZER_PROJECT_GROUP,
   MUSIC_PLAYER_PROJECT_GROUP,
   BACKFLOW_CALCULATOR_PROJECT_GROUP,
