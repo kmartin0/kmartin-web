@@ -2,6 +2,10 @@
 
 Personal portfolio website for showing software projects, technologies and project details.
 
+## Live Website
+
+Hosted at [https://kmartin.nl](https://kmartin.nl) on a Raspberry Pi using Docker and nginx.
+
 ## Features
 
 - Landing page with links to GitHub and LinkedIn.
